@@ -103,4 +103,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Função para capturar parâmetro vendedor da URL atual
+    function getVendedorParam() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('vendedor');
+    }
+
+    // Função para redirecionar para planos com parâmetro vendedor
+    function redirectToPlanos() {
+        const vendedor = getVendedorParam();
+        let planosUrl = 'https://planos.easydoctors.us/';
+        
+        if (vendedor) {
+            planosUrl += `?vendedor=${vendedor}`;
+        }
+        
+        window.location.href = planosUrl;
+    }
+
+    // Configurar todos os botões "QUERO BLINDAR MINHA SAÚDE AGORA"
+    document.querySelectorAll('a[href="#"]').forEach(btn => {
+        if (btn.textContent.includes('QUERO BLINDAR MINHA SAÚDE AGORA')) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                redirectToPlanos();
+            });
+        }
+    });
 });
