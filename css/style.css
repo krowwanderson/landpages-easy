@@ -515,6 +515,10 @@ body {
 /* Responsividade para FAQ */
 @media (max-width: 768px) {
     .hero-social-proof {
+        display: none;
+    }
+    
+    .hero-social-proof {
         position: relative;
         top: 0;
         left: 0;
