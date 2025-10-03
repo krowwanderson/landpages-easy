@@ -1,0 +1,143 @@
+
+📋 ESPECIFICAÇÕES DO PROJETO - EASY DOCTORS LANDING PAGES
+🎯 OBJETIVO
+3 landing pages otimizadas para conversão de brasileiros nos EUA para o serviço Easy Doctors (telemedicina em português).
+📁 ESTRUTURA DO PROJETO
+easydoctors-landpages-novo/
+├── headline1.html          # Landing Page 1
+├── headline2.html          # Landing Page 2  
+├── headline3.html          # Landing Page 3
+├── css/
+│   └── style.css          # Estilos customizados
+├── js/
+│   └── script.js          # JavaScript funcional
+├── images/
+│   ├── easydoctors_logo.png
+│   ├── hero-image-purple.png
+│   ├── solution-image-purple.png
+│   ├── perfil_maria_santos.png
+│   ├── perfil_joao_silva.png
+│   ├── perfil_ana_rodrigues.png
+│   └── perfil_carlos_oliveira.png
+└── fonts/
+
+
+🎨 DESIGN & UX
+Paleta de Cores:
+Primária: #74237F (roxo Easy Doctors)
+Secundária: #8a49a1 (roxo claro)
+Sucesso: #00BE91 (verde)
+Danger: #dc3545 (vermelho)
+Fundo Hero: Gradiente escuro premium
+Tipografia:
+Fonte: Inter (Google Fonts)
+Parágrafos: 1.25rem
+Lead: 1.35rem
+Spans: 1.2rem
+Layout Responsivo:
+Desktop: 2 colunas (conteúdo + imagem)
+Mobile: 1 coluna empilhada
+Prova social: Escondida no mobile
+📄 ESTRUTURA DAS PÁGINAS
+1. Hero Section:
+Título principal impactante
+Subtítulo explicativo (comentado no headline2)
+3 recursos principais (comentados no headline2)
+Imagem hero com legenda
+Prova social com fotos reais (4 usuários + "+")
+2. Expansão da Promessa:
+Problema: "Aqui você não pode ficar doente"
+Estatísticas de custos médicos
+3 relatos em caixas destacadas
+Dados de pesquisas (Johns Hopkins, Harvard)
+3. Sistema de Blindagem 4D:
+4 camadas de proteção
+Benefícios específicos
+Lista de vantagens com ícones
+4. Provas Sociais:
+Depoimentos de usuários
+Estatísticas da empresa
+Como funciona (3 passos)
+5. Oferta:
+Descrição detalhada dos benefícios
+Preço: US$ 49/mês
+Botão CTA principal
+6. Objeções:
+Cenário de emergência
+Comparação com Urgent Care
+Solução Easy Doctors
+7. Credibilidade:
+Estatísticas da empresa
+FAQ interativo (6 perguntas)
+CTA final
+🔧 FUNCIONALIDADES TÉCNICAS
+Tracking Instalado:
+Facebook Pixel: 1073705441539784
+Google Analytics 4: G-3B0BSL6R9N
+Google Tag Manager: GTM-NND3QG7D
+Utmify: Gerenciamento de UTMs
+JavaScript:
+FAQ accordion interativo
+Animações de entrada
+Contador animado para estatísticas
+Redirecionamento inteligente para planos.easydoctors.us
+Passagem de parâmetro vendedor automática
+CSS:
+Design responsivo completo
+Animações suaves
+Hover effects
+Gradientes e sombras
+🎯 CALLS-TO-ACTION
+Botão Principal:
+Texto: "QUERO BLINDAR MINHA SAÚDE AGORA"
+Ação: Redireciona para https://planos.easydoctors.us/
+Parâmetro: Passa ?vendedor=ID se existir na URL atual
+
+Funcionalidade de Redirecionamento:
+URL atual: landpages-easy.vercel.app/headline1.html?vendedor=ABC123
+↓ Clique no botão
+URL destino: https://planos.easydoctors.us/?vendedor=ABC123
+
+📱 RESPONSIVIDADE
+Breakpoints:
+Desktop: > 768px
+Tablet: 768px - 576px
+Mobile: < 576px
+Ajustes Mobile:
+Prova social escondida
+Títulos reduzidos
+Botões adaptados
+FAQ otimizado
+
+Repositório: GitHub
+Nome: landpages-easy
+Deploy automático via Vercel
+📊 MÉTRICAS & ANALYTICS
+Eventos Rastreados:
+PageView (Facebook + Google)
+Cliques nos botões CTA
+Interações com FAQ
+Parâmetros UTM
+Conversões:
+Redirecionamentos para página de planos
+Parâmetro vendedor preservado
+Tracking de origem de tráfego
+🔍 DIFERENÇAS ENTRE PÁGINAS
+headline1.html:
+Título: "Quantas vezes você já adiou a ida ao médico..."
+Subtítulo e recursos visíveis
+headline2.html:
+Título: "Nunca cometa o erro de ir a um médico nos EUA..."
+Subtítulo e recursos comentados
+headline3.html:
+Título: "Pare agora de pedir remédios para brasileiros..."
+Subtítulo e recursos visíveis
+✅ STATUS ATUAL
+✅ Design responsivo completo
+✅ Tracking funcionando
+✅ FAQ interativo
+✅ Redirecionamento inteligente
+✅ Deploy no Vercel
+✅ Imagens de usuários reais
+✅ Otimização mobile
+Projeto 100% funcional e pronto para campanhas! 🎯
