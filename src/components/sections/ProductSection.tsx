@@ -105,7 +105,7 @@ export const ProductSection = () => {
                 const Icon = benefit.icon;
                 return (
                   <div key={index} className="flex items-center gap-4 bg-white/10 rounded-lg p-4">
-                    <Icon className="h-8 w-8 text-accent flex-shrink-0" />
+                    <Icon className="h-8 w-8 text-white flex-shrink-0" />
                     <p className="text-white font-semibold">{benefit.text}</p>
                   </div>
                 );
