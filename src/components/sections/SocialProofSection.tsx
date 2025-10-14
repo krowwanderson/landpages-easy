@@ -53,13 +53,12 @@ export const SocialProofSection = () => {
               5 anos cuidando de quem vive fora do país
             </h3>
             
-            {/* NOVA IMAGEM: crianca-consulta.png */}
-            <div className="flex justify-center mb-8">
+            {/* NOVA IMAGEM: crianca-consulta.png - Responsiva */}
+            <div className="flex justify-center mb-6 md:mb-8">
               <img
                 src="/images/crianca-consulta.png"
                 alt="Criança em consulta médica online com EasyDoctors"
-                className="max-w-full h-auto rounded-lg shadow-lg"
-                style={{ maxWidth: '500px' }}
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
               />
             </div>
             
@@ -81,7 +80,7 @@ export const SocialProofSection = () => {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-muted-foreground italic">
-              "Carrossel de depoimentos reais de clientes apareceria aqui"
+            
             </p>
           </div>
         </div>

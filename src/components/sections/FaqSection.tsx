@@ -10,8 +10,8 @@ import { MessageCircle, TestTube, Stethoscope, FileText, Pill, AlertTriangle, Do
 
 export const FaqSection = () => {
   const handleAssinaturaClick = () => {
-    // Por enquanto, só um alert. Depois adicionamos o redirect com UTM
-    alert("Redirecionamento para assinatura será implementado aqui!");
+    // Redireciona para a seção de planos
+    document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleFaleConoscoClick = () => {

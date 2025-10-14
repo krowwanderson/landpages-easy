@@ -57,31 +57,30 @@ export const WhyItMattersSection = () => {
               No final, orienta e prescreve o tratamento.
             </p>
             
-            {/* NOVO: Imagem à esquerda, texto à direita */}
-            <div className="flex flex-col md:flex-row items-center gap-8 my-12">
-              {/* Imagem à esquerda */}
-              <div className="md:w-1/2 flex justify-center">
+            {/* Imagem e texto responsivos */}
+            <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-8 my-8 md:my-12">
+              {/* Imagem */}
+              <div className="w-full lg:w-1/2 flex justify-center">
                 <img
                   src="/images/desanparada.png"
                   alt="Pessoa desamparada"
-                  className="max-w-full h-auto rounded-lg shadow-lg"
-                  style={{ maxWidth: '350px' }}
+                  className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
                 />
               </div>
 
-              {/* Texto à direita com ícones X */}
-              <div className="md:w-1/2">
-                <p className="font-semibold text-2xl text-center py-8">
-                  <span className="flex items-center justify-center md:justify-start gap-2 mb-2">
-                    <X className="h-6 w-6 text-red-500" />
+              {/* Texto com ícones X */}
+              <div className="w-full lg:w-1/2">
+                <p className="font-semibold text-xl sm:text-2xl text-center lg:text-left">
+                  <span className="flex items-center justify-center lg:justify-start gap-2 mb-3">
+                    <X className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 flex-shrink-0" />
                     <span>Sem exame.</span>
                   </span>
-                  <span className="flex items-center justify-center md:justify-start gap-2 mb-2">
-                    <X className="h-6 w-6 text-red-500" />
+                  <span className="flex items-center justify-center lg:justify-start gap-2 mb-3">
+                    <X className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 flex-shrink-0" />
                     <span>Sem aparelho.</span>
                   </span>
-                  <span className="flex items-center justify-center md:justify-start gap-2">
-                    <X className="h-6 w-6 text-red-500" />
+                  <span className="flex items-center justify-center lg:justify-start gap-2">
+                    <X className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 flex-shrink-0" />
                     <span>Sem toque físico.</span>
                   </span>
                 </p>
@@ -92,8 +91,8 @@ export const WhyItMattersSection = () => {
               Ou seja: <span className="text-primary font-semibold">o que realmente resolve é a conversa</span>. A anamnese — escutar, entender, conectar médico e paciente.
             </p>
             
-            <Card className="p-8 bg-gradient-primary/10 border-primary mt-12">
-              <p className="text-xl md:text-2xl font-bold text-center">
+            <Card className="p-6 md:p-8 bg-gradient-primary/10 border-primary mt-12">
+              <p className="text-lg md:text-xl lg:text-2xl font-bold text-center">
                 Não é coincidência que segundo o próprio sistema de saúde dos EUA, <span className="text-accent">96% dos casos são resolvidos sem exame físico</span>.
               </p>
             </Card>

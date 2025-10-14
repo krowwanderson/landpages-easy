@@ -108,7 +108,7 @@ export const ProductSection = () => {
             </h3>
             
             <p className="text-xl text-white mb-8 text-center">
-              Você paga um <span className="font-bold text-accent">valor fixo por mês</span>, que custa até <span className="font-bold text-accent">10 vezes menos</span> do que os $300 que gastaria com o sistema tradicional — e ainda pode incluir até 3 dependentes no mesmo plano.
+              Você paga um <span className="font-bold text-white">valor fixo por mês</span>, que custa até <span className="font-bold text-white">10 vezes menos</span> do que os $300 que gastaria com o sistema tradicional — e ainda pode incluir até 3 dependentes no mesmo plano.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">

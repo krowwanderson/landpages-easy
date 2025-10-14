@@ -1,8 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
+import { redirectWithUtm } from "@/lib/utils";
 
 export const PricingSection = () => {
+  const handlePlanClick = () => {
+    // Redireciona preservando os parâmetros UTM
+    redirectWithUtm("https://www.vivaeasy.com.br/quase-la");
+  };
+
   const individualFeatures = [
     "Clínico Geral Ilimitado",
     "Consultas por vídeo 24h",
@@ -69,7 +75,10 @@ export const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="w-full bg-gradient-primary hover:shadow-glow text-lg py-6 font-bold">
+              <Button 
+                onClick={handlePlanClick}
+                className="w-full bg-gradient-primary hover:shadow-glow text-lg py-6 font-bold"
+              >
                 Quero Este Plano →
               </Button>
             </Card>
@@ -110,7 +119,10 @@ export const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="w-full bg-gradient-accent hover:shadow-accent text-lg py-6 font-bold text-accent-foreground">
+              <Button 
+                onClick={handlePlanClick}
+                className="w-full bg-gradient-accent hover:shadow-accent text-lg py-6 font-bold text-accent-foreground"
+              >
                 Quero Este Plano →
               </Button>
             </Card>
