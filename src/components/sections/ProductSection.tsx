@@ -69,6 +69,17 @@ export const ProductSection = () => {
               <p className="text-lg">
                 Porque, como mostram estudos do próprio sistema de saúde americano, <span className="text-accent font-bold">96% dos casos são resolvidos apenas com uma boa conversa com o médico</span>.
               </p>
+              
+              {/* NOVA IMAGEM: 96% */}
+              <div className="flex justify-center my-8">
+                <img
+                  src="/images/96porcento.png"
+                  alt="96% dos casos são resolvidos apenas com conversa médica"
+                  className="max-w-full h-auto rounded-lg shadow-lg"
+                  style={{ maxWidth: '500px' }}
+                />
+              </div>
+              
               <p className="mt-4">
                 Nada de exames caros ou salas de espera lotadas. O que resolve, na maioria das vezes, é ser ouvido por quem sabe o que está fazendo — e entende o que você sente.
               </p>

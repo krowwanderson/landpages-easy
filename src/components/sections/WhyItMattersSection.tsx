@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { DollarSign, Clock, MessageSquare } from "lucide-react";
+import { DollarSign, Clock, MessageSquare, X } from "lucide-react";
 
 export const WhyItMattersSection = () => {
   return (
@@ -57,11 +57,36 @@ export const WhyItMattersSection = () => {
               No final, orienta e prescreve o tratamento.
             </p>
             
-            <p className="font-semibold text-2xl text-center py-8">
-              Sem exame.<br />
-              Sem aparelho.<br />
-              Sem toque físico.
-            </p>
+            {/* NOVO: Imagem à esquerda, texto à direita */}
+            <div className="flex flex-col md:flex-row items-center gap-8 my-12">
+              {/* Imagem à esquerda */}
+              <div className="md:w-1/2 flex justify-center">
+                <img
+                  src="/images/desanparada.png"
+                  alt="Pessoa desamparada"
+                  className="max-w-full h-auto rounded-lg shadow-lg"
+                  style={{ maxWidth: '350px' }}
+                />
+              </div>
+
+              {/* Texto à direita com ícones X */}
+              <div className="md:w-1/2">
+                <p className="font-semibold text-2xl text-center py-8">
+                  <span className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <X className="h-6 w-6 text-red-500" />
+                    <span>Sem exame.</span>
+                  </span>
+                  <span className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <X className="h-6 w-6 text-red-500" />
+                    <span>Sem aparelho.</span>
+                  </span>
+                  <span className="flex items-center justify-center md:justify-start gap-2">
+                    <X className="h-6 w-6 text-red-500" />
+                    <span>Sem toque físico.</span>
+                  </span>
+                </p>
+              </div>
+            </div>
             
             <p>
               Ou seja: <span className="text-primary font-semibold">o que realmente resolve é a conversa</span>. A anamnese — escutar, entender, conectar médico e paciente.

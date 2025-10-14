@@ -22,6 +22,11 @@ export const StickyCtaButton = () => {
     document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Botão escondido - retorna null para não renderizar
+  return null;
+
+  // Código original comentado para referência:
+  /*
   return (
     <div
       className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
@@ -38,4 +43,5 @@ export const StickyCtaButton = () => {
       </Button>
     </div>
   );
+  */
 };

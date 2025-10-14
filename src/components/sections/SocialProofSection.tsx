@@ -52,6 +52,17 @@ export const SocialProofSection = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
               5 anos cuidando de quem vive fora do país
             </h3>
+            
+            {/* NOVA IMAGEM: crianca-consulta.png */}
+            <div className="flex justify-center mb-8">
+              <img
+                src="/images/crianca-consulta.png"
+                alt="Criança em consulta médica online com EasyDoctors"
+                className="max-w-full h-auto rounded-lg shadow-lg"
+                style={{ maxWidth: '500px' }}
+              />
+            </div>
+            
             <p className="text-center text-xl mb-8">
               com parcerias nas maiores redes de farmácias e laboratórios dos EUA
             </p>
