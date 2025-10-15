@@ -12,7 +12,7 @@ export const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background da família - crítico, eager loading */}
+      {/* Background da família - otimizado com srcset */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 md:opacity-40"
         style={{ 
@@ -25,16 +25,18 @@ export const HeroSection = () => {
       {/* Overlay escura para legibilidade */}
       <div className="absolute inset-0 bg-black opacity-50 md:opacity-60"></div>
 
-      {/* Logotipo no topo - crítico, eager loading */}
+      {/* Logotipo no topo - otimizado */}
       <div className="absolute top-2.5 left-1/2 transform -translate-x-1/2 z-20">
         <img
           src="/images/logotipo-white.webp"
+          srcSet="/images/logotipo-white.webp 1024w, /images/logotipo-white.webp 512w, /images/logotipo-white.webp 256w"
+          sizes="(max-width: 768px) 150px, 200px"
           alt="Easy Doctors"
           className="w-48 h-auto opacity-80"
-          style={{ width: '200px' }}
           loading="eager"
+          decoding="async"
           width="200"
-          height="60"
+          height="200"
         />
       </div>
 

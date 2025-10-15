@@ -53,13 +53,18 @@ export const SocialProofSection = () => {
               5 anos cuidando de quem vive fora do país
             </h3>
             
-            {/* NOVA IMAGEM: crianca-consulta.png - Responsiva */}
+            {/* NOVA IMAGEM: crianca-consulta.png - otimizada */}
             <div className="flex justify-center mb-6 md:mb-8">
               <img
                 src="/images/crianca-consulta.webp"
+                srcSet="/images/crianca-consulta.webp 1024w, /images/crianca-consulta.webp 512w, /images/crianca-consulta.webp 256w"
+                sizes="(max-width: 640px) 320px, (max-width: 768px) 400px, 500px"
                 alt="Criança em consulta médica online com EasyDoctors"
-                className="max-w-full h-auto rounded-lg shadow-lg"
-                style={{ maxWidth: '500px' }}
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+                loading="lazy"
+                decoding="async"
+                width="500"
+                height="500"
               />
             </div>
             

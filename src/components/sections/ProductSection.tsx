@@ -75,15 +75,18 @@ export const ProductSection = () => {
                 Porque, como mostram estudos do próprio sistema de saúde americano, <span className="text-accent font-bold">96% dos casos são resolvidos apenas com uma boa conversa com o médico</span>.
               </p>
               
-              {/* NOVA IMAGEM: 96% */}
+              {/* NOVA IMAGEM: 96% - otimizada */}
               <div className="flex justify-center my-6 md:my-8">
                 <img
                   src="/images/96porcento.webp"
+                  srcSet="/images/96porcento.webp 1024w, /images/96porcento.webp 512w, /images/96porcento.webp 256w"
+                  sizes="(max-width: 640px) 320px, (max-width: 768px) 400px, 500px"
                   alt="96% dos casos são resolvidos apenas com conversa médica"
                   className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
                   loading="lazy"
+                  decoding="async"
                   width="500"
-                  height="auto"
+                  height="500"
                 />
               </div>
               
