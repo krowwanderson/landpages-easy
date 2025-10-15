@@ -57,9 +57,9 @@ export const WhyItMattersSection = () => {
               No final, orienta e prescreve o tratamento.
             </p>
             
-            {/* Imagem e texto responsivos - otimizado */}
+            {/* Imagem e texto responsivos */}
             <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-8 my-8 md:my-12">
-              {/* Imagem otimizada */}
+              {/* Imagem */}
               <div className="w-full lg:w-1/2 flex justify-center">
                 <img
                   src="/images/desanparada.webp"
@@ -67,7 +67,7 @@ export const WhyItMattersSection = () => {
                   className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
                   loading="lazy"
                   width="350"
-                  height="auto"
+                  height="250"
                 />
               </div>
 
