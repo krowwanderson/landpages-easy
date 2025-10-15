@@ -66,7 +66,7 @@ export const HowItWorksSection = () => {
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
                         <span className="text-xl">{step.emoji}</span>
-                        Passo {step.number} – {step.title}
+                        {step.title}
                       </h3>
                     </div>
                   </div>

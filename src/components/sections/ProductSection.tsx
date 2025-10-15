@@ -1,7 +1,12 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Check, Smartphone, Clock, Globe, Shield, DollarSign } from "lucide-react";
 
 export const ProductSection = () => {
+  const handleEscolherPlano = () => {
+    document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const benefits = [
     {
       icon: Smartphone,
@@ -71,12 +76,14 @@ export const ProductSection = () => {
               </p>
               
               {/* NOVA IMAGEM: 96% */}
-              <div className="flex justify-center my-8">
+              <div className="flex justify-center my-6 md:my-8">
                 <img
-                  src="/images/96porcento.png"
+                  src="/images/96porcento.webp"
                   alt="96% dos casos são resolvidos apenas com conversa médica"
-                  className="max-w-full h-auto rounded-lg shadow-lg"
-                  style={{ maxWidth: '500px' }}
+                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+                  loading="lazy"
+                  width="500"
+                  height="auto"
                 />
               </div>
               
@@ -127,6 +134,17 @@ export const ProductSection = () => {
               Daqui a pouco, eu vou te mostrar como fazer sua assinatura.<br />
               Mas antes, deixa eu te mostrar como é ser cliente da Easy Doctors na prática…
             </p>
+
+            {/* Botão Escolha seu plano */}
+            <div className="text-center mt-8">
+              <Button 
+                onClick={handleEscolherPlano}
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90 text-lg px-12 py-6 font-bold"
+              >
+                Escolha seu plano →
+              </Button>
+            </div>
           </div>
         </div>
       </div>

@@ -56,9 +56,10 @@ export const SocialProofSection = () => {
             {/* NOVA IMAGEM: crianca-consulta.png - Responsiva */}
             <div className="flex justify-center mb-6 md:mb-8">
               <img
-                src="/images/crianca-consulta.png"
+                src="/images/crianca-consulta.webp"
                 alt="Criança em consulta médica online com EasyDoctors"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+                className="max-w-full h-auto rounded-lg shadow-lg"
+                style={{ maxWidth: '500px' }}
               />
             </div>
             

@@ -32,14 +32,9 @@ export const PricingSection = () => {
     <section id="planos" className="py-20 md:py-32 bg-gradient-hero">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
-            Agora, veja abaixo o melhor plano para você assinar Easy Doctors
-          </h2>
-          <p className="text-xl text-center text-muted-foreground mb-16">
-            e já começar a usar todos os benefícios do seu médico de bolso.
-          </p>
+         
           
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Escolha o plano ideal pra você:
           </h3>
           

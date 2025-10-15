@@ -1,7 +1,12 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Heart, AlertCircle, CheckCircle } from "lucide-react";
 
 export const FuturePictureSection = () => {
+  const handleEscolherPlano = () => {
+    document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="futuro" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -47,6 +52,17 @@ export const FuturePictureSection = () => {
                 </div>
               </div>
             </Card>
+          </div>
+
+          {/* Botão Escolha seu plano */}
+          <div className="text-center">
+            <Button 
+              onClick={handleEscolherPlano}
+              size="lg"
+              className="bg-gradient-primary hover:shadow-glow text-lg px-12 py-6 font-bold"
+            >
+              Escolha seu plano →
+            </Button>
           </div>
         </div>
       </div>

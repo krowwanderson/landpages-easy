@@ -62,9 +62,12 @@ export const WhyItMattersSection = () => {
               {/* Imagem */}
               <div className="w-full lg:w-1/2 flex justify-center">
                 <img
-                  src="/images/desanparada.png"
+                  src="/images/desanparada.webp"
                   alt="Pessoa desamparada"
                   className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+                  loading="lazy"
+                  width="350"
+                  height="250"
                 />
               </div>
 
