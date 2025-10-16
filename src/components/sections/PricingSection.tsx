@@ -4,9 +4,14 @@ import { Check, Star } from "lucide-react";
 import { redirectWithUtm } from "@/lib/utils";
 
 export const PricingSection = () => {
-  const handlePlanClick = () => {
-    // Redireciona preservando os parâmetros UTM
-    redirectWithUtm("https://www.vivaeasy.com.br/quase-la");
+  const handleIndividualPlanClick = () => {
+    // Redireciona para plano individual preservando os parâmetros UTM
+    redirectWithUtm("https://www.vivaeasy.com.br/quase-la/2");
+  };
+
+  const handleFamilyPlanClick = () => {
+    // Redireciona para plano família preservando os parâmetros UTM
+    redirectWithUtm("https://www.vivaeasy.com.br/quase-la/1");
   };
 
   const individualFeatures = [
@@ -71,7 +76,7 @@ export const PricingSection = () => {
               </div>
               
               <Button 
-                onClick={handlePlanClick}
+                onClick={handleIndividualPlanClick}
                 className="w-full bg-gradient-primary hover:shadow-glow text-lg py-6 font-bold"
               >
                 Quero Este Plano →
@@ -115,7 +120,7 @@ export const PricingSection = () => {
               </div>
               
               <Button 
-                onClick={handlePlanClick}
+                onClick={handleFamilyPlanClick}
                 className="w-full bg-gradient-accent hover:shadow-accent text-lg py-6 font-bold text-accent-foreground"
               >
                 Quero Este Plano →
